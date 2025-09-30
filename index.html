@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .link-btn {
+      display: block;
+      margin: 15px auto;
+      padding: 12px 25px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+      width: 200px;
+    }
+
+    .link-btn:hover {
+      background: #388e3c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌐 Quick Website Links</h1>
+    <button class="link-btn" onclick="openWebsite('https://www.google.com')">Google</button>
+    <button class="link-btn" onclick="openWebsite('https://www.github.com')">GitHub</button>
+    <button class="link-btn" onclick="openWebsite('https://www.wikipedia.org')">Wikipedia</button>
+    <button class="link-btn" onclick="openWebsite('https://www.youtube.com')">YouTube</button>
+  </div>
+
+  <script>
+    // Function to open links in a new tab
+    function openWebsite(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
